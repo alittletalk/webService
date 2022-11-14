@@ -1,6 +1,7 @@
-import { sentence } from 'txtgen'
+var starWarsNames = require('starwars-character-names');
 // Import the express library and assign it to a variable
 import express from 'express'
+
 
 // Create an instance of an express application 
 const app = express()
@@ -10,9 +11,9 @@ const port = process.env.PORT || 3001
 
 // Set up a response for the root path of the application
 app.get('/', (req, res) => {
-  const randomSentence = sentence()
+  const starWarsNames = starWarsNames()
 
-  res.send(randomSentence)
+  res.send(starWarsNames)
 })
 
 // Set the application to listen a port

@@ -1,22 +1,52 @@
 {
-  "name": "assigment",
-  "version": "1.0.0",
-  "description": "udhuehfiuewh",
-  "main": "index.js",
+  "name": "starwars-character-names",
+  "version": "0.0.0-development",
+  "description": "Get random starwars character names",
+  "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"may the force be with you\" && exit 1",
     "develop": "nodemon index.js",
     "start": "node index.js"
   },
-  "author": "",
-  "license": "ISC",
+  
   "dependencies": {
-    "@ssamaresh1990/use-star-wars-api": "^1.0.0",
-    "doctor-who": "^1.1.1",
-    "dog": "^1.1.3",
-    "express": "^4.18.2",
-    "moviedb": "^0.2.12",
-    "txtgen": "^3.0.4"
+    "unique-random-array": "1.0.0"
+    
+  },
+
+
+  
+  "devDependencies": {
+    "chai": "4.1.2",
+    "cz-conventional-changelog": "2.1.0",
+    "mocha": "4.0.1",
+    "semantic-release": "^11.0.2"
+  },
+  "scripts": {
+    "commit": "git cz",
+    "test": "mocha src/index.test.js -w",
+    "test:single": "mocha src/index.test.js",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KeilCarpenter/starwars-character-names.git"
+  },
+  "keywords": [
+    "starwars",
+    "random",
+    "names"
+  ],
+  "author": "Keil Carpenter <keilcarpenter@protonmail.com> (http://keilcarpenter.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KeilCarpenter/starwars-character-names/issues"
+  },
+  "homepage": "https://github.com/KeilCarpenter/starwars-character-names#readme",
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   }
 }
