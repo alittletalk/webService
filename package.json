@@ -12,7 +12,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@ssamaresh1990/use-star-wars-api": "^1.0.0",
     "doctor-who": "^1.1.1",
-    "express": "^4.18.2"
+    "dog": "^1.1.3",
+    "express": "^4.18.2",
+    "moviedb": "^0.2.12",
+    "txtgen": "^3.0.4"
   }
 }

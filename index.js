@@ -1,4 +1,4 @@
-console.log("hello")
+import { sentence } from 'txtgen'
 // Import the express library and assign it to a variable
 import express from 'express'
 
@@ -10,7 +10,9 @@ const port = process.env.PORT || 3001
 
 // Set up a response for the root path of the application
 app.get('/', (req, res) => {
-  res.send("hello")
+  const randomSentence = sentence()
+
+  res.send(randomSentence)
 })
 
 // Set the application to listen a port
